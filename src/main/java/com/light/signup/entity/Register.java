@@ -30,6 +30,9 @@ public class Register {
     @NotBlank(message="Please add a suitable password")
     @Length(min=8,max=16)
     private String password;
+
+
+
     @NotBlank(message ="Please enter a company name")
     @Pattern(regexp = "^[a-zA-Z]*$",message="Company name should only contain alphabets")
     private String company;
